@@ -1,34 +1,14 @@
-<div align="center">
-  
-  ![banner](docs/ts-js-k6.png)
+# Performance Testing - Zero Click Lung Cancer Prediction
 
-# Template to use TypeScript with k6
+Performance tests for zcLCP
 
-![.github/workflows/push.yml](https://github.com/grafana/k6-template-typescript/workflows/.github/workflows/push.yml/badge.svg?branch=main)
+TypeScript, k6
 
-</div>
+## Set up
 
-This repository provides a scaffolding project to start using TypeScript in your k6 scripts.
+**Install k6**
 
-## Rationale
-
-While JavaScript is great for a myriad of reasons, one area where it fall short is type safety and developer ergonomics. It's perfectly possible to write JavaScript code that will look OK and behave OK until a certain condition forces the executor into a faulty branch.
-
-While it, of course, still is possible to shoot yourself in the foot with TypeScript as well, it's significantly harder. Without adding much overhead, TypeScript will:
-
-- Improve the ability to safely refactor your code.
-- Improve readability and maintainability.
-- Allow you to drop a lot of the defensive code previously needed to make sure consumers are calling functions properly.
-
-
-## Installation
-
-**Creating a project from the `template-typescript` template**
-
-To generate a TypeScript project that includes the dependencies and initial configuration, navigate to the [template-typescript](https://github.com/grafana/k6-template-typescript) page and click **Use this template**.
-
-  ![](docs/use-this-template-button.png)
-
+https://k6.io/docs/get-started/installation/
 
 **Install dependencies**
 
@@ -51,7 +31,7 @@ npm run bundle
 Once that is done, we can run our script the same way we usually do, for instance:
 
 ```bash
-k6 run dist/get-200-status-test.js
+k6 run dist/get-job-test.js
 ```
 
 **See also**
